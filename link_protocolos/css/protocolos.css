@@ -1,0 +1,237 @@
+body {
+    background: rgba(255, 134, 5, 0.219);
+    /*background: radial-gradient(rgba(255, 134, 5, 0.219), rgb(248, 168, 139));*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    /*background:rgb(134, 173, 204);*/
+    /*background: rgb(199, 175, 175);*/
+    background: radial-gradient(rgba(51, 113, 170, 0.808), rgb(30, 57, 146));
+    /* rgba(51, 113, 170, 0.808);*/
+    box-shadow: 1px 1px 50px;
+
+}
+
+.banner {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    /*box-shadow: 1px 1px 50px;*/
+
+}
+
+.doctor {
+    width: 250px;
+    padding: 10px;
+
+}
+
+.texto__logo {
+    color: antiquewhite;
+}
+
+nav {
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    padding: 5px;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 1s;
+
+
+}
+
+nav a:hover {
+    color: antiquewhite;
+    /*text-decoration:underline;*/
+    font-size: 35px;
+    border: 1px rgb(252, 83, 5) solid;
+    border-radius: 5px;
+    background: rgb(236, 140, 105);
+
+}
+
+nav a:active {
+    color: rgb(34, 104, 34);
+    border: 1px rgb(34, 104, 34) solid;
+}
+
+
+main a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+
+main a:hover {
+    color: antiquewhite;
+    border-color: rgb(252, 83, 5);
+    border-radius: 35px;
+}
+
+main li:active {
+    border-radius: 35px;
+    border-color: rgb(34, 104, 34);
+    border-width: 3px;
+
+}
+
+.produtos {
+    width: 940px;
+    margin: 10px auto;
+    padding: 50px 0px;
+
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 23%;
+    vertical-align: top;
+    margin: 6px;
+    margin-bottom: 12px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+    transition: all 0.4s;
+    box-shadow: 1px 1px 50px;
+
+}
+
+.produtos li:hover {
+    color: rgb(252, 83, 5);
+    border-color: rgb(252, 83, 5);
+    transform: scale(1.1);
+    background: rgb(236, 140, 105);
+}
+
+.produtos li:hover h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.produtos li:active {
+    border-radius: 35px;
+    border-color: rgb(34, 104, 34);
+    border-width: 3px;
+}
+
+.produtos li:active h2 {
+    color: rgb(34, 104, 34);
+}
+
+
+.produtos h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+/*.produtos h2:hover {
+    font-size: 30px;
+    font-weight: bold;
+}*/
+
+.produto-descricao {
+    font-size: 16px;
+}
+
+.produto-preco {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    /*background:rgb(134, 173, 204);*/
+    /*background: rgb(51, 113, 170);*/
+    background: radial-gradient(rgba(51, 113, 170, 0.808), rgb(30, 57, 146));
+    padding: 5px;
+    box-shadow: 1px 1px 50px;
+
+}
+
+.blackheart {
+    width: 250px;
+    padding: 10px;
+
+}
+
+/*aumenta a altura do banner*/
+@media (max-width:800px) {
+    .banner {
+        height: 180px;
+    }
+}
+
+/*diminue o tamanho da imagem*/
+@media (max-width: 800px) {
+    .doctor {
+        width:150px;
+    }
+}
+
+/*torna invisível o nome sob a imagem*/
+@media (max-width: 800px) {
+    .texto__logo {
+        display: none;
+    }
+}
+
+/*traz para a esquerda o menu nav*/
+@media (max-width: 897px) {
+   nav {
+    width: 100%;
+    top: 95px;
+    font-size: 10px;
+    right: auto;
+   
+   } 
+}
+
+/*Diminui a fonte dos botões da nav*/
+@media (max-width: 897px) {
+    nav a {
+        font-size: 18px;
+    }
+    
+}
+
+/*muda o tamanho das caixas e o display em 1x1*/
+@media (max-width: 600px) {
+    .produtos li {
+        width: 40%;
+        display: block;
+    }
+}
+
+/*Sobre o botão mural de avisos e o traz um pouco mais para a esquerda*/
+@media (max-width: 600px) {
+    #botao_mural {
+        top: 185px;
+        right: 150px
+    }
+}
