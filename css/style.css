@@ -7,7 +7,7 @@ body {
 header {
     /*background:rgb(134, 173, 204);*/
     /*background: rgb(199, 175, 175);*/
-    background: radial-gradient(rgba(51, 113, 170, 0.808), rgb(30, 57, 146));
+    background: radial-gradient(rgba(18, 222, 164, 0.808), rgb(84, 78, 79));
     /* rgba(51, 113, 170, 0.808);*/
     box-shadow: 1px 1px 50px;
 
@@ -23,8 +23,9 @@ header {
 }
 
 .doctor {
-    width: 250px;
+    width: 181px;
     padding: 10px;
+    margin: -16px;
 
 }
 
@@ -72,6 +73,40 @@ nav a:active {
     border: 1px rgb(34, 104, 34) solid;
 }
 
+.categorias {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px 0;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    margin-top: 10px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.categorias__lista {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.categorias__lista li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.categorias__lista a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.categorias__lista a:hover {
+    color: rgb(252, 83, 5);
+    text-decoration: underline;
+}
+
+
 /* teste de animação para esconder a caixa de avisos até ser clicada e se tornar visivel*/
 
 #check__aviso {
@@ -83,6 +118,14 @@ nav a:active {
 
 #check__aviso:checked ~ .texto__avisos {
     transform: translateX(1395px);
+}
+
+
+.icon_sistemas {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+    display: block;
 }
 
 
@@ -218,13 +261,14 @@ main li:active {
 }
 
 .produtos li {
+    overflow: hidden; /* evita que coisas saiam do card */
+    padding: 0;
     display: inline-block;
     text-align: center;
     width: 30%;
     vertical-align: top;
     margin: 6px;
     margin-bottom: 12px;
-    padding: 10px 20px;
     box-sizing: border-box;
     border-color: black;
     border-width: 2px;
@@ -240,6 +284,8 @@ main li:active {
     border-color: rgb(252, 83, 5);
     transform: scale(1.1);
     background: rgb(236, 140, 105);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .produtos li:hover h2 {
@@ -271,7 +317,10 @@ main li:active {
 }*/
 
 .produto-descricao {
-    font-size: 16px;
+    font-size: 15px;
+    padding: 10px;
+    background: antiquewhite;
+    color: #333;
 }
 
 .produto-preco {
@@ -284,7 +333,7 @@ footer {
     text-align: center;
     /*background:rgb(134, 173, 204);*/
     /*background: rgb(51, 113, 170);*/
-    background: radial-gradient(rgba(51, 113, 170, 0.808), rgb(30, 57, 146));
+    background: radial-gradient(rgba(18, 222, 164, 0.808), rgb(84, 78, 79));
     padding: 5px;
     box-shadow: 1px 1px 50px;
     /*color: antiquewhite;*/
@@ -296,8 +345,10 @@ footer {
 }
 */
 .blackheart {
-    width: 250px;
+    width: 181px;
     padding: 10px;
+    margin: -46px;
+    margin-left: -800px;
 
 }
 
