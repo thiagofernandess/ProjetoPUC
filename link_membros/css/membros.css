@@ -230,6 +230,82 @@ nav a:active {
 
 }
 
+/* estilização do formulário na main*/
+.membros__container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: radial-gradient(rgba(18, 222, 164, 0.808), rgb(84, 78, 79));
+  border-radius: 20px;
+  box-shadow: 1px 1px 50px rgba(0,0,0,0.2);
+  text-align: center;
+  color: antiquewhite;
+}
+
+.membros__tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.membros__tab {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  border: 2px solid antiquewhite;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: antiquewhite;
+  transition: all 0.3s;
+}
+
+.membros__tab.ativo, .membros__tab:hover {
+  background: rgb(236, 140, 105);
+  color: black;
+  border-color: rgb(252, 83, 5);
+}
+
+.membros__form {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.membros__form.ativo {
+  display: flex;
+}
+
+.membros__form h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.membros__form input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+.membros__botao {
+  padding: 10px;
+  background: rgb(252, 83, 5);
+  color: antiquewhite;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.membros__botao:hover {
+  background: antiquewhite;
+  color: rgb(252, 83, 5);
+}
+
+
 
 main a {
     text-transform: uppercase;

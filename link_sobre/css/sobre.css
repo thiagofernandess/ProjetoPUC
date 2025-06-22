@@ -253,6 +253,76 @@ main li:active {
 
 }
 
+/* Estilização do sobre nós*/
+
+.sobre__container {
+  max-width: 940px;
+  margin: 40px auto;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  color: antiquewhite;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+.sobre__caixa {
+  background: radial-gradient(rgba(18, 222, 164, 0.808), rgb(84, 78, 79));
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 1px 1px 50px rgba(0,0,0,0.2);
+  width: 45%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.sobre__foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid antiquewhite;
+  box-shadow: 0 0 10px rgba(252, 83, 5, 0.7);
+}
+
+.sobre__texto {
+  flex: 1;
+  text-align: left;
+}
+
+.sobre__texto h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) {
+  .sobre__container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .sobre__caixa {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .sobre__foto {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+  .sobre__texto {
+    text-align: center;
+  }
+}
+
+
 .produtos {
     width: 940px;
     margin: 10px auto;
