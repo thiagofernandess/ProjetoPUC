@@ -1,0 +1,78 @@
+main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background: radial-gradient(rgba(18, 222, 164, 0.3), rgb(84, 78, 79));
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+    color: antiquewhite;
+}
+
+main h2 {
+    text-align: center;
+    color: antiquewhite;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    background-color: #fefefe;
+    color: #333;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form textarea:focus {
+    border-color: rgb(252, 83, 5);
+    outline: none;
+    box-shadow: 0 0 10px rgba(252, 83, 5, 0.5);
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: rgb(252, 83, 5);
+    color: antiquewhite;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(236, 140, 105);
+    color: black;
+    transform: scale(1.05);
+}
+
+form input[type="submit"]:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do Formulário</title>
+
+    <!-- Links de CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css"> <!-- Se quiser aproveitar o mesmo CSS -->
+
+    <!-- JavaScript para receber os parâmetros -->
+    <script src="js/formAction.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <h1>
+                <img class="doctor" src="imagens/Joystick_tali_semFundo.png" alt="Logo Joystick">
+                <p class="texto__logo">We live together. We play together</p>
+            </h1>
+            <nav>
+                <ul class="navegacao">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="link_membros/membros.html">Membros</a></li>
+                    <li><a href="link_about/about.html">Sobre</a></li>
+                    <li><a href="form.html">Formulário</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="categorias">
+            <ul class="categorias__lista">
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Análises</a></li>
+                <li><a href="#">Previews</a></li>
+                <li><a href="#">Guias</a></li>
+                <li><a href="#">Rumores</a></li>
+                <li><a href="#">Trailers</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="resultado-container">
+            <h2>Dados Recebidos via GET</h2>
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <img class="blackheart" src="imagens/Joystick_tali_semFundo.png" alt="">
+        <p>&copy;Thiago Fernandes</p>
+        <p>&copy;Anne Izabelle</p>
+    </footer>
+</body>
+
+</html>

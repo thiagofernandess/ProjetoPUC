@@ -1,0 +1,22 @@
+.resultado-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: radial-gradient(rgba(18, 222, 164, 0.1), rgb(255, 255, 255));
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.resultado-container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(84, 78, 79);
+    margin-bottom: 20px;
+}
+
+#resultado p {
+    margin: 8px 0;
+    font-size: 16px;
+}
