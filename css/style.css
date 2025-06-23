@@ -1,32 +1,23 @@
 body {
     background: rgba(255, 134, 5, 0.219);
-    /*background: radial-gradient(rgba(255, 134, 5, 0.219), rgb(248, 168, 139));*/
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
-    /*background:rgb(134, 173, 204);*/
-    /*background: rgb(199, 175, 175);*/
     background: radial-gradient(rgba(18, 222, 164, 0.808), rgb(84, 78, 79));
-    /* rgba(51, 113, 170, 0.808);*/
     box-shadow: 1px 1px 50px;
-
 }
-/*substituindo width de 940px por 100% e acrescentando max-width de 940px para teste*/
+
 .banner {
     position: relative;
     width: 940px;
-    /*max-width: 940px;*/
     margin: 0 auto;
-    /*box-shadow: 1px 1px 50px;*/
-
 }
 
 .doctor {
     width: 181px;
     padding: 10px;
     margin: -16px;
-
 }
 
 .texto__logo {
@@ -37,14 +28,12 @@ nav {
     position: absolute;
     top: 100px;
     right: 0;
-
 }
 
 nav li {
     display: inline;
     margin: 0 0 0 15px;
     padding: 5px;
-
 }
 
 nav a {
@@ -54,18 +43,14 @@ nav a {
     font-size: 24px;
     text-decoration: none;
     transition: all 1s;
-
-
 }
 
 nav a:hover {
     color: antiquewhite;
-    /*text-decoration:underline;*/
     font-size: 35px;
     border: 1px rgb(252, 83, 5) solid;
     border-radius: 5px;
     background: rgb(236, 140, 105);
-
 }
 
 nav a:active {
@@ -79,7 +64,7 @@ nav a:active {
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
     margin-top: 10px;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .categorias__lista {
@@ -106,9 +91,6 @@ nav a:active {
     text-decoration: underline;
 }
 
-
-/* teste de animação para esconder a caixa de avisos até ser clicada e se tornar visivel*/
-
 #check__aviso {
     display: none;
     position: absolute;
@@ -116,10 +98,9 @@ nav a:active {
     right: 75px;
 }
 
-#check__aviso:checked ~ .texto__avisos {
+#check__aviso:checked~.texto__avisos {
     transform: translateX(1395px);
 }
-
 
 .icon_sistemas {
     width: 100%;
@@ -127,7 +108,6 @@ nav a:active {
     border-radius: 20px 20px 0 0;
     display: block;
 }
-
 
 #botao_mural {
     width: 230px;
@@ -167,7 +147,6 @@ nav a:active {
     text-align: center;
 }
 
-/* teste de caixa de avisos*/
 .texto__avisos {
     left: -300px;
     width: 230px;
@@ -190,20 +169,15 @@ nav a:active {
     box-shadow: 1px 1px 50px;
     line-height: 170%;
     font-size: 15px;
-    /*
-    border: 1px rgb(252, 83, 5) solid;
-    background: rgb(236, 140, 105);
-    box-shadow: 1px 1px 50px;*/
 }
 
 .texto__avisos:hover {
     border-color: rgb(252, 83, 5);
     background: rgb(236, 140, 105);
     transform: scale(1.1);
-    color: antiquewhite;    
+    color: antiquewhite;
 }
 
-/*texto de título h2 do campo àcima*/
 .avisos__titulo {
     text-transform: uppercase;
     color: black;
@@ -218,7 +192,6 @@ nav a:active {
     color: antiquewhite;
 }
 
-/*corpo do texto (h3) do campo de avisos */
 .avisos__corpo {
     text-transform: uppercase;
     color: black;
@@ -227,9 +200,7 @@ nav a:active {
     text-decoration: none;
     text-align: center;
     padding: 12px;
-
 }
-
 
 main a {
     text-transform: uppercase;
@@ -237,7 +208,6 @@ main a {
     font-weight: bold;
     font-size: 24px;
     text-decoration: none;
-
 }
 
 main a:hover {
@@ -250,22 +220,21 @@ main li:active {
     border-radius: 35px;
     border-color: rgb(34, 104, 34);
     border-width: 3px;
-
 }
 
 .produtos {
     width: 940px;
     margin: 10px auto;
     padding: 50px 0px;
-
 }
 
 .produtos li {
-    overflow: hidden; /* evita que coisas saiam do card */
+    overflow: hidden;
     padding: 0;
     display: inline-block;
     text-align: center;
     width: 30%;
+    height: 250px;
     vertical-align: top;
     margin: 6px;
     margin-bottom: 12px;
@@ -276,7 +245,6 @@ main li:active {
     border-radius: 20px;
     transition: all 0.4s;
     box-shadow: 1px 1px 50px;
-
 }
 
 .produtos li:hover {
@@ -303,18 +271,11 @@ main li:active {
     color: rgb(34, 104, 34);
 }
 
-
 .produtos h2 {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-
 }
-
-/*.produtos h2:hover {
-    font-size: 30px;
-    font-weight: bold;
-}*/
 
 .produto-descricao {
     font-size: 15px;
@@ -331,79 +292,70 @@ main li:active {
 
 footer {
     text-align: center;
-    /*background:rgb(134, 173, 204);*/
-    /*background: rgb(51, 113, 170);*/
     background: radial-gradient(rgba(18, 222, 164, 0.808), rgb(84, 78, 79));
     padding: 5px;
     box-shadow: 1px 1px 50px;
-    /*color: antiquewhite;*/
-
 }
 
-/*.texto__rodape {
-    color: antiquewhite;
-}
-*/
 .blackheart {
     width: 181px;
     padding: 10px;
     margin: -46px;
     margin-left: -800px;
-
 }
 
-/*aumenta a altura do banner*/
 @media (max-width:800px) {
     .banner {
         height: 180px;
     }
 }
 
-/*diminue o tamanho da imagem*/
 @media (max-width: 800px) {
     .doctor {
-        width:150px;
+        width: 150px;
     }
 }
 
-/*torna invisível o nome sob a imagem*/
 @media (max-width: 800px) {
     .texto__logo {
         display: none;
     }
 }
 
-/*traz para a esquerda o menu nav*/
 @media (max-width: 897px) {
-   nav {
-    width: 100%;
-    top: 95px;
-    font-size: 10px;
-    right: auto;
-   
-   } 
+    nav {
+        width: 100%;
+        top: 95px;
+        font-size: 10px;
+        right: auto;
+    }
 }
 
-/*Diminui a fonte dos botões da nav*/
 @media (max-width: 897px) {
     nav a {
         font-size: 18px;
     }
-    
 }
 
-/*muda o tamanho das caixas e o display em 1x1*/
 @media (max-width: 600px) {
     .produtos li {
         width: 40%;
         display: block;
+        height: auto;
     }
 }
 
-/*Sobre o botão mural de avisos e o traz um pouco mais para a esquerda*/
 @media (max-width: 600px) {
     #botao_mural {
         top: 185px;
-        right: 150px
+        right: 150px;
     }
+}
+
+.produtos li .icon_sistemas {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
 }
